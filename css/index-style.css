@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+.home{
+    width: 100%;
+    height: 85vh;
+    background-image: url("173841.jpg");
+    background-size: 100% 100%;
+}
+body{
+  overflow-x: hidden;
+}
+.nav-bar{
+    height: 10vh;
+    width: 80%;;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    color: white;
+    width: 50%;
+    
+}
+
+.dummy-nav{
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 7em;
+}
+
+.nav-list li{
+    padding: 2em;
+}
+
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.sub-home{
+    margin-top: 5px;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+}
+
+.sec-image1{
+    width: 50%;
+    padding-left: 3em;
+    background-image: url("338363.jpg");
+    background-size: 100% 100%;
+    color:white;
+
+}
+
+.sec-image2{
+    width: 50%;
+    padding-left: 3em;
+    background-image: url("1125039.jpg");
+    background-size: 100% 100%;
+    color:white;
+
+}
+
+.head1{
+    padding: 1em 0 1em 0;
+    color: white;
+    font-size: 3em;
+}
+
+.learn-more{
+    width: 10em;
+    height: 4em;
+    background: none;
+    color: white;
+    font-size: 1em;
+    font-weight: bolder;
+    border: 2px solid white;
+}
+
+.learn-more:hover{
+    transform: scaleY(1.2) scaleX(1.2) scaleZ(1.2) !important;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color:hsl(354.08,73.08%,59.22%);
+    ;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #3282f1;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .home{
+    position : relative; 
+}
+
+
+/* ------------------------------ */
+.flip-card {
+ background-color: transparent;
+ box-shadow: 5px 10px 8px black;
+ border-radius: 10px;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px; 
+  /* margin-left: 120px  ; */
+  overflow: hidden;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  background-image: url("1554642.jpg");
+  background-size: 400px 300px;
+}
+
+.flip-card-back {
+  background-image: url("conm8.png");
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* ------------------------------- */
+
+.car-sec{
+  padding: 3em 0 3em 0;
+  display: flex;
+  float:left;
+  justify-content: space-around;
+  width: 100%;
+  background: rgb(16,16,22);
+background: linear-gradient(90deg, rgba(16,16,22,1) 0%, rgba(54,54,59,1) 48%, rgba(46,48,48,1) 60%, rgba(17,20,23,1) 100%);
+color:white;
+}
+
+.car-sec label{
+  padding-right: 2em;
+}
+
+/* -------------footer-------------------- */
+
+.footer{
+  font-family: 'poppins', Arial, Helvetica, sans-serif;
+  background-color: silver;
+  width: 100%;
+  height: 40vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid black;
+  display: flex;
+}
+
+.details{
+  width: 33%;
+  height: 90%;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-right: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  padding-left: 3em;
+  padding-right: 5em;
+  justify-content: center;
+}
+
+.pages{
+  padding-top: 3em;
+  width: 33%;
+  height: 90%;
+  margin-top: auto;
+  border-right: 1px solid black;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pages-list{
+  padding-top: 1em;
+  list-style: none;
+  text-align: center;
+}
+
+.pages-list a,.pages-list li{
+  color: black;
+  text-decoration: none;
+  padding: .7em 0 0 0;
+}
+
+.social{
+  width: 33%;
+  height: 90%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter{
+  color: grey;
+  font-weight: lighter;
+}
+
+.newsletter-form input::placeholder{
+  padding: 1em;
+}
+
+.newsletter-form input{
+  margin-top: 5px;
+  height: 3em;
+}
+
+.email-submit{
+  background-color: orange;
+  border: none;
+  padding: 0 1em 0 1em;
+}
+.bton
+{
+  background-color: orange;
+  border: none;
+  padding: 0 1em 0 1em;
+}
+.bton:hover
+{
+  height: 30px;
+  width: 100px;
+}
+.bclass
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
